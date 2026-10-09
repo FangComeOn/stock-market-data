@@ -1,0 +1,425 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "trading_date",
+    "session",
+    "data_origin",
+    "simulation",
+    "status",
+    "database_status",
+    "stocks",
+    "source_status",
+    "warnings",
+    "calendar_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "\\+08:00$"
+    },
+    "trading_date": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "session": {
+      "enum": [
+        "pre",
+        "close",
+        "intraday"
+      ]
+    },
+    "data_origin": {
+      "const": "validated_sqlite_cache"
+    },
+    "simulation": {
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "degraded"
+      ]
+    },
+    "database_status": {
+      "enum": [
+        "ok",
+        "unavailable"
+      ]
+    },
+    "stocks": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "symbol",
+          "name",
+          "price",
+          "pct",
+          "asof",
+          "quote_status",
+          "sources",
+          "validation_reasons",
+          "observe_only",
+          "is_realtime",
+          "official_close_verified"
+        ],
+        "properties": {
+          "symbol": {
+            "enum": [
+              "002050.SZ",
+              "002472.SZ",
+              "300454.SZ",
+              "300896.SZ",
+              "600177.SH",
+              "600900.SH",
+              "688017.SH"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20
+          },
+          "price": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^-?[0-9]+(?:\\.[0-9]+)?(?:[Ee][+-]?[0-9]+)?$",
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "pct": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^-?[0-9]+(?:\\.[0-9]+)?(?:[Ee][+-]?[0-9]+)?$",
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "asof": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "\\+08:00$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "quote_status": {
+            "enum": [
+              "UNAVAILABLE",
+              "SOURCE_CONFLICT",
+              "SINGLE_SOURCE_UNVERIFIED",
+              "SUSPENDED",
+              "STALE_DATA",
+              "CALENDAR_UNAVAILABLE",
+              "INVALID_RECORD",
+              "INTRADAY_VALID",
+              "AFTER_CLOSE_SNAPSHOT",
+              "OFFICIAL_CLOSE_VERIFIED"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "uniqueItems": true,
+            "maxItems": 2,
+            "items": {
+              "enum": [
+                "sina",
+                "tencent"
+              ]
+            }
+          },
+          "validation_reasons": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "items": {
+              "type": "string",
+              "maxLength": 150
+            }
+          },
+          "observe_only": {
+            "type": "boolean"
+          },
+          "is_realtime": {
+            "type": "boolean"
+          },
+          "official_close_verified": {
+            "type": "boolean"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "quote_status": {
+                  "enum": [
+                    "INTRADAY_VALID",
+                    "AFTER_CLOSE_SNAPSHOT",
+                    "OFFICIAL_CLOSE_VERIFIED"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "price": {
+                  "type": "string"
+                },
+                "pct": {
+                  "type": "string"
+                },
+                "asof": {
+                  "type": "string"
+                },
+                "sources": {
+                  "minItems": 2
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "price": {
+                  "type": "null"
+                },
+                "pct": {
+                  "type": "null"
+                },
+                "asof": {
+                  "type": "null"
+                },
+                "is_realtime": {
+                  "const": false
+                },
+                "official_close_verified": {
+                  "const": false
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "symbol": {
+                  "const": "300454.SZ"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "observe_only": {
+                  "const": true
+                }
+              }
+            }
+          }
+        ]
+      },
+      "allOf": [
+        {
+          "contains": {
+            "properties": {
+              "symbol": {
+                "const": "002050.SZ"
+              }
+            },
+            "required": [
+              "symbol"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "properties": {
+              "symbol": {
+                "const": "002472.SZ"
+              }
+            },
+            "required": [
+              "symbol"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "properties": {
+              "symbol": {
+                "const": "300454.SZ"
+              }
+            },
+            "required": [
+              "symbol"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "properties": {
+              "symbol": {
+                "const": "300896.SZ"
+              }
+            },
+            "required": [
+              "symbol"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "properties": {
+              "symbol": {
+                "const": "600177.SH"
+              }
+            },
+            "required": [
+              "symbol"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "properties": {
+              "symbol": {
+                "const": "600900.SH"
+              }
+            },
+            "required": [
+              "symbol"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "properties": {
+              "symbol": {
+                "const": "688017.SH"
+              }
+            },
+            "required": [
+              "symbol"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        }
+      ]
+    },
+    "source_status": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source",
+          "status",
+          "checked_at"
+        ],
+        "properties": {
+          "source": {
+            "enum": [
+              "sina",
+              "tencent"
+            ]
+          },
+          "status": {
+            "enum": [
+              "ok",
+              "failed",
+              "stale",
+              "unavailable"
+            ]
+          },
+          "checked_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "\\+08:00$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "string",
+        "maxLength": 200
+      }
+    },
+    "calendar_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "is_trading_day"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "ok",
+            "unavailable"
+          ]
+        },
+        "is_trading_day": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public validated seven-stock quote snapshot",
+  "description": "Cache-only, no credentials or positions. Schema version is independent of application release."
+}
