@@ -143,6 +143,7 @@
               "CALENDAR_UNAVAILABLE",
               "INVALID_RECORD",
               "INTRADAY_VALID",
+              "SOURCE_MINOR_DIFF",
               "AFTER_CLOSE_SNAPSHOT",
               "OFFICIAL_CLOSE_VERIFIED"
             ]
@@ -184,6 +185,7 @@
                 "quote_status": {
                   "enum": [
                     "INTRADAY_VALID",
+              "SOURCE_MINOR_DIFF",
                     "AFTER_CLOSE_SNAPSHOT",
                     "OFFICIAL_CLOSE_VERIFIED"
                   ]
