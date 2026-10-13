@@ -5,18 +5,18 @@
   },
   "data_origin": "validated_sqlite_cache",
   "database_status": "ok",
-  "generated_at": "2026-10-13T11:19:29.509829+08:00",
+  "generated_at": "2026-10-13T13:32:02.484717+08:00",
   "schema_version": "1.0.0",
   "session": "intraday",
   "simulation": false,
   "source_status": [
     {
-      "checked_at": "2026-10-13T11:19:28.651378+08:00",
+      "checked_at": "2026-10-13T13:32:01.726947+08:00",
       "source": "sina",
       "status": "ok"
     },
     {
-      "checked_at": "2026-10-13T11:19:28.651378+08:00",
+      "checked_at": "2026-10-13T13:32:01.726947+08:00",
       "source": "tencent",
       "status": "ok"
     }
@@ -24,31 +24,31 @@
   "status": "ok",
   "stocks": [
     {
-      "asof": "2026-10-13T11:19:24+08:00",
+      "asof": "2026-10-13T13:32:00+08:00",
       "is_realtime": true,
       "name": "三花智控",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-3.35",
-      "price": "31.73",
-      "quote_status": "SOURCE_MINOR_DIFF",
+      "pct": "-0.40",
+      "price": "32.70",
+      "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
         "tencent"
       ],
       "symbol": "002050.SZ",
       "validation_reasons": [
-        "双源存在允许范围内的轻微差异，采用腾讯报价"
+        "盘中双源已验证缓存，重新检查新鲜度通过"
       ]
     },
     {
-      "asof": "2026-10-13T11:19:24+08:00",
+      "asof": "2026-10-13T13:32:00+08:00",
       "is_realtime": true,
       "name": "双环传动",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-3.11",
-      "price": "34.88",
+      "pct": "-0.94",
+      "price": "35.66",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -60,13 +60,13 @@
       ]
     },
     {
-      "asof": "2026-10-13T11:19:24+08:00",
+      "asof": "2026-10-13T13:31:57+08:00",
       "is_realtime": true,
       "name": "深信服",
       "observe_only": true,
       "official_close_verified": false,
-      "pct": "-3.79",
-      "price": "132.67",
+      "pct": "-1.36",
+      "price": "136.02",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -78,13 +78,13 @@
       ]
     },
     {
-      "asof": "2026-10-13T11:19:21+08:00",
+      "asof": "2026-10-13T13:31:57+08:00",
       "is_realtime": true,
       "name": "爱美客",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-1.67",
-      "price": "92.54",
+      "pct": "-0.18",
+      "price": "93.94",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -96,13 +96,13 @@
       ]
     },
     {
-      "asof": "2026-10-13T11:19:28+08:00",
+      "asof": "2026-10-13T13:31:58+08:00",
       "is_realtime": true,
       "name": "雅戈尔",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "1.42",
-      "price": "8.58",
+      "pct": "1.77",
+      "price": "8.61",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -114,31 +114,31 @@
       ]
     },
     {
-      "asof": "2026-10-13T11:19:28+08:00",
+      "asof": "2026-10-13T13:31:58+08:00",
       "is_realtime": true,
       "name": "长江电力",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-0.61",
-      "price": "29.20",
-      "quote_status": "SOURCE_MINOR_DIFF",
+      "pct": "-0.82",
+      "price": "29.14",
+      "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
         "tencent"
       ],
       "symbol": "600900.SH",
       "validation_reasons": [
-        "双源存在允许范围内的轻微差异，采用腾讯报价"
+        "盘中双源已验证缓存，重新检查新鲜度通过"
       ]
     },
     {
-      "asof": "2026-10-13T11:19:25+08:00",
+      "asof": "2026-10-13T13:31:58+08:00",
       "is_realtime": true,
       "name": "绿的谐波",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-2.74",
-      "price": "245.11",
+      "pct": "1.50",
+      "price": "255.80",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -153,7 +153,6 @@
   "trading_date": "2026-10-13",
   "warnings": [
     "仅公开七股已验证行情；发布前已确认最近10分钟独立collect采集。",
-    "盘中双源核验（允许限定轻微价差）；行情最多10分钟；11:30–11:40午休检查快照非实时；generated_at不是报价时间。",
-    "部分股票双源存在轻微价差，已按公开盘中行情容忍规则采用腾讯报价；不代表完全一致双源确认。"
+    "盘中双源严格核验；行情最多10分钟；11:30–11:40午休检查快照非实时；generated_at不是报价时间。"
   ]
 }
