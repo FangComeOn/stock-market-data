@@ -5,18 +5,18 @@
   },
   "data_origin": "validated_sqlite_cache",
   "database_status": "ok",
-  "generated_at": "2026-10-14T15:24:02.464257+08:00",
+  "generated_at": "2026-10-15T08:23:02.469482+08:00",
   "schema_version": "1.0.0",
-  "session": "close",
+  "session": "pre",
   "simulation": false,
   "source_status": [
     {
-      "checked_at": "2026-10-14T15:24:01.729732+08:00",
+      "checked_at": "2026-10-15T08:23:01.705563+08:00",
       "source": "sina",
       "status": "ok"
     },
     {
-      "checked_at": "2026-10-14T15:24:01.729732+08:00",
+      "checked_at": "2026-10-15T08:23:01.705563+08:00",
       "source": "tencent",
       "status": "ok"
     }
@@ -24,7 +24,7 @@
   "status": "ok",
   "stocks": [
     {
-      "asof": "2026-10-14T15:24:00+08:00",
+      "asof": "2026-10-14T16:15:00+08:00",
       "is_realtime": false,
       "name": "三花智控",
       "observe_only": false,
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "asof": "2026-10-14T15:24:00+08:00",
+      "asof": "2026-10-14T16:14:21+08:00",
       "is_realtime": false,
       "name": "双环传动",
       "observe_only": false,
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "asof": "2026-10-14T15:23:54+08:00",
+      "asof": "2026-10-14T16:14:54+08:00",
       "is_realtime": false,
       "name": "深信服",
       "observe_only": true,
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "asof": "2026-10-14T15:23:03+08:00",
+      "asof": "2026-10-14T16:14:30+08:00",
       "is_realtime": false,
       "name": "爱美客",
       "observe_only": false,
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "asof": "2026-10-14T15:23:40+08:00",
+      "asof": "2026-10-14T16:14:40+08:00",
       "is_realtime": false,
       "name": "雅戈尔",
       "observe_only": false,
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "asof": "2026-10-14T15:23:53+08:00",
+      "asof": "2026-10-14T16:14:53+08:00",
       "is_realtime": false,
       "name": "长江电力",
       "observe_only": false,
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "asof": "2026-10-14T15:23:56+08:00",
+      "asof": "2026-10-14T16:14:56+08:00",
       "is_realtime": false,
       "name": "绿的谐波",
       "observe_only": false,
