@@ -5,18 +5,18 @@
   },
   "data_origin": "validated_sqlite_cache",
   "database_status": "ok",
-  "generated_at": "2026-10-20T08:23:01.988094+08:00",
+  "generated_at": "2026-10-20T08:25:02.009930+08:00",
   "schema_version": "1.0.0",
   "session": "pre",
   "simulation": false,
   "source_status": [
     {
-      "checked_at": "2026-10-20T08:23:01.255035+08:00",
+      "checked_at": "2026-10-20T08:25:01.249894+08:00",
       "source": "sina",
       "status": "ok"
     },
     {
-      "checked_at": "2026-10-20T08:23:01.255035+08:00",
+      "checked_at": "2026-10-20T08:25:01.249894+08:00",
       "source": "tencent",
       "status": "ok"
     }
