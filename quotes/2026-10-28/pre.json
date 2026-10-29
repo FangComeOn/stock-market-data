@@ -1,0 +1,158 @@
+{
+  "calendar_status": {
+    "is_trading_day": true,
+    "status": "ok"
+  },
+  "data_origin": "validated_sqlite_cache",
+  "database_status": "ok",
+  "generated_at": "2026-10-29T08:23:02.079352+08:00",
+  "schema_version": "1.0.0",
+  "session": "pre",
+  "simulation": false,
+  "source_status": [
+    {
+      "checked_at": "2026-10-29T08:23:01.298224+08:00",
+      "source": "sina",
+      "status": "ok"
+    },
+    {
+      "checked_at": "2026-10-29T08:23:01.298224+08:00",
+      "source": "tencent",
+      "status": "ok"
+    }
+  ],
+  "status": "ok",
+  "stocks": [
+    {
+      "asof": "2026-10-28T16:14:45+08:00",
+      "is_realtime": false,
+      "name": "三花智控",
+      "observe_only": false,
+      "official_close_verified": false,
+      "pct": "4.64",
+      "price": "35.64",
+      "quote_status": "AFTER_CLOSE_SNAPSHOT",
+      "sources": [
+        "sina",
+        "tencent"
+      ],
+      "symbol": "002050.SZ",
+      "validation_reasons": [
+        "双源收盘快照，非交易所官方收盘核验"
+      ]
+    },
+    {
+      "asof": "2026-10-28T16:14:45+08:00",
+      "is_realtime": false,
+      "name": "双环传动",
+      "observe_only": false,
+      "official_close_verified": false,
+      "pct": "8.91",
+      "price": "45.10",
+      "quote_status": "AFTER_CLOSE_SNAPSHOT",
+      "sources": [
+        "sina",
+        "tencent"
+      ],
+      "symbol": "002472.SZ",
+      "validation_reasons": [
+        "双源收盘快照，非交易所官方收盘核验"
+      ]
+    },
+    {
+      "asof": "2026-10-28T16:14:45+08:00",
+      "is_realtime": false,
+      "name": "深信服",
+      "observe_only": true,
+      "official_close_verified": false,
+      "pct": "2.44",
+      "price": "143.00",
+      "quote_status": "AFTER_CLOSE_SNAPSHOT",
+      "sources": [
+        "sina",
+        "tencent"
+      ],
+      "symbol": "300454.SZ",
+      "validation_reasons": [
+        "双源收盘快照，非交易所官方收盘核验"
+      ]
+    },
+    {
+      "asof": "2026-10-28T16:14:45+08:00",
+      "is_realtime": false,
+      "name": "爱美客",
+      "observe_only": false,
+      "official_close_verified": false,
+      "pct": "-1.56",
+      "price": "97.32",
+      "quote_status": "AFTER_CLOSE_SNAPSHOT",
+      "sources": [
+        "sina",
+        "tencent"
+      ],
+      "symbol": "300896.SZ",
+      "validation_reasons": [
+        "双源收盘快照，非交易所官方收盘核验"
+      ]
+    },
+    {
+      "asof": "2026-10-28T16:14:59+08:00",
+      "is_realtime": false,
+      "name": "雅戈尔",
+      "observe_only": false,
+      "official_close_verified": false,
+      "pct": "-1.33",
+      "price": "8.19",
+      "quote_status": "AFTER_CLOSE_SNAPSHOT",
+      "sources": [
+        "sina",
+        "tencent"
+      ],
+      "symbol": "600177.SH",
+      "validation_reasons": [
+        "双源收盘快照，非交易所官方收盘核验"
+      ]
+    },
+    {
+      "asof": "2026-10-28T16:14:55+08:00",
+      "is_realtime": false,
+      "name": "长江电力",
+      "observe_only": false,
+      "official_close_verified": false,
+      "pct": "-1.44",
+      "price": "29.40",
+      "quote_status": "AFTER_CLOSE_SNAPSHOT",
+      "sources": [
+        "sina",
+        "tencent"
+      ],
+      "symbol": "600900.SH",
+      "validation_reasons": [
+        "双源收盘快照，非交易所官方收盘核验"
+      ]
+    },
+    {
+      "asof": "2026-10-28T16:14:57+08:00",
+      "is_realtime": false,
+      "name": "绿的谐波",
+      "observe_only": false,
+      "official_close_verified": false,
+      "pct": "6.05",
+      "price": "291.98",
+      "quote_status": "AFTER_CLOSE_SNAPSHOT",
+      "sources": [
+        "sina",
+        "tencent"
+      ],
+      "symbol": "688017.SH",
+      "validation_reasons": [
+        "双源收盘快照，非交易所官方收盘核验"
+      ]
+    }
+  ],
+  "trading_date": "2026-10-28",
+  "warnings": [
+    "仅公开七股已验证行情；发布前已确认最近10分钟独立collect采集。",
+    "非实时收盘快照；generated_at不是报价时间；未标记官方核验时不代表正式收盘认证。"
+  ]
+}
