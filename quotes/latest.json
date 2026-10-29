@@ -5,18 +5,18 @@
   },
   "data_origin": "validated_sqlite_cache",
   "database_status": "ok",
-  "generated_at": "2026-10-29T10:32:01.827012+08:00",
+  "generated_at": "2026-10-29T11:29:01.841043+08:00",
   "schema_version": "1.0.0",
   "session": "intraday",
   "simulation": false,
   "source_status": [
     {
-      "checked_at": "2026-10-29T10:32:01.174614+08:00",
+      "checked_at": "2026-10-29T11:29:01.178061+08:00",
       "source": "sina",
       "status": "ok"
     },
     {
-      "checked_at": "2026-10-29T10:32:01.174614+08:00",
+      "checked_at": "2026-10-29T11:29:01.178061+08:00",
       "source": "tencent",
       "status": "ok"
     }
@@ -24,31 +24,31 @@
   "status": "ok",
   "stocks": [
     {
-      "asof": "2026-10-29T10:31:57+08:00",
+      "asof": "2026-10-29T11:28:57+08:00",
       "is_realtime": true,
       "name": "三花智控",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-1.80",
-      "price": "35.00",
-      "quote_status": "SOURCE_MINOR_DIFF",
+      "pct": "-2.55",
+      "price": "34.73",
+      "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
         "tencent"
       ],
       "symbol": "002050.SZ",
       "validation_reasons": [
-        "双源存在允许范围内的轻微差异，采用腾讯报价"
+        "盘中双源已验证缓存，重新检查新鲜度通过"
       ]
     },
     {
-      "asof": "2026-10-29T10:31:57+08:00",
+      "asof": "2026-10-29T11:28:57+08:00",
       "is_realtime": true,
       "name": "双环传动",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-2.42",
-      "price": "44.01",
+      "pct": "-4.17",
+      "price": "43.22",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -60,13 +60,13 @@
       ]
     },
     {
-      "asof": "2026-10-29T10:31:57+08:00",
+      "asof": "2026-10-29T11:28:57+08:00",
       "is_realtime": true,
       "name": "深信服",
       "observe_only": true,
       "official_close_verified": false,
-      "pct": "-12.17",
-      "price": "125.60",
+      "pct": "-13.29",
+      "price": "124.00",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -78,13 +78,13 @@
       ]
     },
     {
-      "asof": "2026-10-29T10:31:57+08:00",
+      "asof": "2026-10-29T11:28:57+08:00",
       "is_realtime": true,
       "name": "爱美客",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-6.74",
-      "price": "90.76",
+      "pct": "-9.00",
+      "price": "88.56",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -96,13 +96,13 @@
       ]
     },
     {
-      "asof": "2026-10-29T10:31:56+08:00",
+      "asof": "2026-10-29T11:28:56+08:00",
       "is_realtime": true,
       "name": "雅戈尔",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-0.37",
-      "price": "8.16",
+      "pct": "-0.49",
+      "price": "8.15",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -114,39 +114,39 @@
       ]
     },
     {
-      "asof": "2026-10-29T10:31:56+08:00",
+      "asof": "2026-10-29T11:28:56+08:00",
       "is_realtime": true,
       "name": "长江电力",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "0.85",
-      "price": "29.65",
-      "quote_status": "INTRADAY_VALID",
+      "pct": "1.16",
+      "price": "29.74",
+      "quote_status": "SOURCE_MINOR_DIFF",
       "sources": [
         "sina",
         "tencent"
       ],
       "symbol": "600900.SH",
       "validation_reasons": [
-        "盘中双源已验证缓存，重新检查新鲜度通过"
+        "双源存在允许范围内的轻微差异，采用腾讯报价"
       ]
     },
     {
-      "asof": "2026-10-29T10:31:56+08:00",
+      "asof": "2026-10-29T11:28:56+08:00",
       "is_realtime": true,
       "name": "绿的谐波",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-1.36",
-      "price": "288.00",
-      "quote_status": "INTRADAY_VALID",
+      "pct": "-1.79",
+      "price": "286.75",
+      "quote_status": "SOURCE_MINOR_DIFF",
       "sources": [
         "sina",
         "tencent"
       ],
       "symbol": "688017.SH",
       "validation_reasons": [
-        "盘中双源已验证缓存，重新检查新鲜度通过"
+        "双源存在允许范围内的轻微差异，采用腾讯报价"
       ]
     }
   ],
