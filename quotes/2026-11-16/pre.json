@@ -5,18 +5,18 @@
   },
   "data_origin": "validated_sqlite_cache",
   "database_status": "ok",
-  "generated_at": "2026-11-17T08:25:01.918601+08:00",
+  "generated_at": "2026-11-17T08:27:01.887735+08:00",
   "schema_version": "1.0.0",
   "session": "pre",
   "simulation": false,
   "source_status": [
     {
-      "checked_at": "2026-11-17T08:25:01.190880+08:00",
+      "checked_at": "2026-11-17T08:27:01.180646+08:00",
       "source": "sina",
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-17T08:25:01.190880+08:00",
+      "checked_at": "2026-11-17T08:27:01.180646+08:00",
       "source": "tencent",
       "status": "ok"
     }
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "asof": "2026-11-16T16:14:57+08:00",
+      "asof": "2026-11-16T16:15:00+08:00",
       "is_realtime": false,
       "name": "双环传动",
       "observe_only": false,
