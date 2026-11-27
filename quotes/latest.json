@@ -5,18 +5,18 @@
   },
   "data_origin": "validated_sqlite_cache",
   "database_status": "ok",
-  "generated_at": "2026-11-27T10:32:01.820425+08:00",
+  "generated_at": "2026-11-27T11:29:02.043649+08:00",
   "schema_version": "1.0.0",
   "session": "intraday",
   "simulation": false,
   "source_status": [
     {
-      "checked_at": "2026-11-27T10:32:01.175028+08:00",
+      "checked_at": "2026-11-27T11:29:01.266530+08:00",
       "source": "sina",
       "status": "ok"
     },
     {
-      "checked_at": "2026-11-27T10:32:01.175028+08:00",
+      "checked_at": "2026-11-27T11:29:01.266530+08:00",
       "source": "tencent",
       "status": "ok"
     }
@@ -24,13 +24,13 @@
   "status": "ok",
   "stocks": [
     {
-      "asof": "2026-11-27T10:31:57+08:00",
+      "asof": "2026-11-27T11:29:00+08:00",
       "is_realtime": true,
       "name": "三花智控",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "0.81",
-      "price": "31.25",
+      "pct": "1.74",
+      "price": "31.54",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -42,13 +42,13 @@
       ]
     },
     {
-      "asof": "2026-11-27T10:31:57+08:00",
+      "asof": "2026-11-27T11:28:57+08:00",
       "is_realtime": true,
       "name": "双环传动",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "2.10",
-      "price": "35.92",
+      "pct": "2.19",
+      "price": "35.95",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -60,13 +60,13 @@
       ]
     },
     {
-      "asof": "2026-11-27T10:31:57+08:00",
+      "asof": "2026-11-27T11:28:57+08:00",
       "is_realtime": true,
       "name": "深信服",
       "observe_only": true,
       "official_close_verified": false,
-      "pct": "2.09",
-      "price": "104.15",
+      "pct": "2.77",
+      "price": "104.85",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -78,13 +78,13 @@
       ]
     },
     {
-      "asof": "2026-11-27T10:31:57+08:00",
+      "asof": "2026-11-27T11:28:57+08:00",
       "is_realtime": true,
       "name": "爱美客",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "0.67",
-      "price": "78.64",
+      "pct": "0.72",
+      "price": "78.68",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -96,13 +96,13 @@
       ]
     },
     {
-      "asof": "2026-11-27T10:31:58+08:00",
+      "asof": "2026-11-27T11:28:58+08:00",
       "is_realtime": true,
       "name": "雅戈尔",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-0.22",
-      "price": "9.14",
+      "pct": "-1.53",
+      "price": "9.02",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -114,13 +114,13 @@
       ]
     },
     {
-      "asof": "2026-11-27T10:31:59+08:00",
+      "asof": "2026-11-27T11:28:59+08:00",
       "is_realtime": true,
       "name": "长江电力",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "-1.48",
-      "price": "31.33",
+      "pct": "-2.04",
+      "price": "31.15",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
@@ -132,13 +132,13 @@
       ]
     },
     {
-      "asof": "2026-11-27T10:31:58+08:00",
+      "asof": "2026-11-27T11:28:58+08:00",
       "is_realtime": true,
       "name": "绿的谐波",
       "observe_only": false,
       "official_close_verified": false,
-      "pct": "2.44",
-      "price": "233.09",
+      "pct": "3.33",
+      "price": "235.12",
       "quote_status": "INTRADAY_VALID",
       "sources": [
         "sina",
